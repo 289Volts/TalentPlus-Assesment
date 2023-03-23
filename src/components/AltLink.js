@@ -3,7 +3,7 @@ import React from "react";
 
 const AltLink = ({ classes, url, label }) => {
 	return (
-		<Link href={url} className={`flex w-[fit-content] ${classes}`}>
+		<Link href={url} className={`flex w-[fit-content] font-bold ${classes}`}>
 			{label}
 		</Link>
 	);

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .toggle .line {
 	transition: y 200ms ease-in 200ms, transform 200ms ease-in, opacity 0ms 200ms;
 	transform-origin: center;
@@ -26,4 +25,8 @@
 
 .toggle[aria-expanded="true"] .bottom {
 	transform: rotate(-45deg);
+}
+
+body {
+	@apply bg-bodyBg;
 }

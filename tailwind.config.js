@@ -6,10 +6,14 @@ module.exports = {
 			colors: {
 				primary: "#004DB3",
 				clients: "#CCDBF0",
+				heroText: "#E7E7E7",
+				featuresCopy: "#A1A1A1",
+				featuresHeading: "#000F24",
 				tag: "rgba(30, 93, 206, 0.2)",
 				signUp: "#054FB3",
-				footer: "#000F24",
+				footerBg: "#000F24",
 				inactive: "#AAC4E6",
+				bodyBg: "#F8F9FC",
 			},
 			backgroundImage: {
 				heroBg: "url('/assets/images/heroBg.svg')",

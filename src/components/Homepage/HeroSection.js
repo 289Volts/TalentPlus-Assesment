@@ -28,7 +28,7 @@ const HeroSection = ({ clashDisplay }) => {
 						</Link>
 						<EnrollNow url="/" classes="py-2 px-4" />
 					</div>
-					<div className="flex gap-1 mb-[3rem]">
+					<div className="flex gap-2 mb-[3rem] text-left">
 						<Image src={faces} alt="previews" />
 						<div className={`${clashDisplay} flex flex-col`}>
 							<span className="font-bold text-[1.1rem] leading-[1]">250+</span>
