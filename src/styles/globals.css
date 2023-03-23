@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.toggle .line {
+	transition: y 200ms ease-in 200ms, transform 200ms ease-in, opacity 0ms 200ms;
+	transform-origin: center;
+}
+
+.toggle[aria-expanded="true"] .line {
+	transition: y 200ms 100ms ease-in, transform 200ms ease-in 200ms, opacity 0ms 200ms;
+}
+
+.toggle[aria-expanded="true"] :is(.top, .bottom) {
+	y: 45;
+}
+
+.toggle[aria-expanded="true"] .top {
+	transform: rotate(45deg);
+}
+
+.toggle[aria-expanded="true"] .middle {
+	opacity: 0;
+}
+
+.toggle[aria-expanded="true"] .bottom {
+	transform: rotate(-45deg);
+}

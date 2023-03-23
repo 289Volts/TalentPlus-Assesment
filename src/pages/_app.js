@@ -26,6 +26,7 @@ const satoshiFont = satoshi({
 			style: "normal",
 		},
 	],
+	variable: "--font-satoshi",
 });
 
 const clashDisplayFont = clashDisplay({
@@ -41,6 +42,7 @@ const clashDisplayFont = clashDisplay({
 			style: "normal",
 		},
 	],
+	variable: "--font-clashDisplay",
 });
 
 export default function App({ Component, pageProps }) {

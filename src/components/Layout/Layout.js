@@ -5,9 +5,9 @@ import Header from "./Header";
 const Layout = ({ children, clashDisplay, satoshi }) => {
 	return (
 		<>
-			<Header className={satoshi} />
-			<main className={`${clashDisplay} ${satoshi}`}>{children} </main>
-			<Footer className={`${clashDisplay} ${satoshi}`} />
+			<Header satoshi={satoshi} />
+			<main className={satoshi}>{children} </main>
+			<Footer clashDisplay={clashDisplay} satoshi={satoshi} />
 		</>
 	);
 };
