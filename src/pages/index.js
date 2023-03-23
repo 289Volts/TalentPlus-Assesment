@@ -2,6 +2,7 @@ import HeroSection from "@/components/Homepage/HeroSection";
 import Head from "next/head";
 import Image from "next/image";
 import clashDisplay from "next/font/local";
+import Clients from "@/components/Homepage/Clients";
 
 const clashDisplayFont = clashDisplay({
 	src: [
@@ -32,7 +33,8 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<HeroSection clashDisplay={clashDisplayFont.className} />
+      <HeroSection clashDisplay={clashDisplayFont.className} />
+      <Clients />
 		</>
 	);
 }
