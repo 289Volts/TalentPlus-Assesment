@@ -46,7 +46,7 @@ const Features = ({ clashDisplay }) => {
 						High quality video, audio & live classes
 						<Image src={crown} alt="" className="absolute left-[0] top-[-0.8rem]" />
 					</h2>
-					<p className="text-featuresCopy mb-4">
+					<p className="text-copy mb-4">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 						no standard meaning for high definition, generally any standard video image
 					</p>

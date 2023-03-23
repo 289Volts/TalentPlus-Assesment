@@ -4,6 +4,7 @@ import Image from "next/image";
 import clashDisplay from "next/font/local";
 import Clients from "@/components/Homepage/Clients";
 import Features from "@/components/Homepage/Features";
+import Benefits from "@/components/Homepage/Benefits";
 
 const clashDisplayFont = clashDisplay({
 	src: [
@@ -34,9 +35,10 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-      <HeroSection clashDisplay={clashDisplayFont.className} />
-      <Clients />
-      <Features clashDisplay={clashDisplayFont.className} />
+			<HeroSection clashDisplay={clashDisplayFont.className} />
+			<Clients />
+			<Features clashDisplay={clashDisplayFont.className} />
+			<Benefits clashDisplay={clashDisplayFont.className} />
 		</>
 	);
 }
