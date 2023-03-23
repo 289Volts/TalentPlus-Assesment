@@ -37,7 +37,7 @@ const Features = ({ clashDisplay }) => {
 	];
 
 	return (
-		<section className="py-[2.5rem]">
+		<section className="py-[2.5rem] features">
 			<div className="w-[90%] mx-auto">
 				<div className=" text-center">
 					<h2
@@ -53,21 +53,21 @@ const Features = ({ clashDisplay }) => {
 					<AltLink
 						label="View Courses"
 						url="/"
-						classes="py-3 px-4 bg-primary text-white rounded-[3px] mx-auto text-sm"
+						classes="py-3 px-6 bg-primary text-white rounded-[3px] mx-auto text-sm"
 					/>
 
-					<div className="flex flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem]">
+					<div className="flex flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem] features-strip">
 						{features.map(({ src, label, id }) => (
 							<FeaturesStrip
 								src={src}
 								label={label}
 								key={label}
-								classes={`${id === 1 ? "w-[48%]" : id === 3 ? "w-[55%]" : "flex-1"}`}
+								classes={`${id === 1 ? "w-[48%]" : id === 3 ? "w-[56%]" : "flex-1"}`}
 							/>
 						))}
 					</div>
 				</div>
-				<div className="">
+				<div className="features-image">
 					<Image src={MobileFeaturesImg} alt="" className="w-[100%] mx-auto" />
 				</div>
 			</div>

@@ -17,6 +17,9 @@ module.exports = {
 			},
 			backgroundImage: {
 				heroBg: "url('/assets/images/heroBg.svg')",
+				featuresWave: "url('/assets/images/Features/wave.svg')",
+				featuresEclipse: "url('/assets/images/Features/eclipse.svg')",
+				featuresDot: "url('/assets/images/Features/dot.svg')",
 			},
 		},
 	},
