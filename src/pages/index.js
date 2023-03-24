@@ -5,6 +5,7 @@ import clashDisplay from "next/font/local";
 import Clients from "@/components/Homepage/Clients";
 import Features from "@/components/Homepage/Features";
 import Benefits from "@/components/Homepage/Benefits";
+import Courses from "@/components/Homepage/Courses";
 
 const clashDisplayFont = clashDisplay({
 	src: [
@@ -38,7 +39,8 @@ export default function Home() {
 			<HeroSection clashDisplay={clashDisplayFont.className} />
 			<Clients />
 			<Features clashDisplay={clashDisplayFont.className} />
-			<Benefits clashDisplay={clashDisplayFont.className} />
+      <Benefits clashDisplay={clashDisplayFont.className} />
+      <Courses clashDisplay={clashDisplayFont.className} />
 		</>
 	);
 }
