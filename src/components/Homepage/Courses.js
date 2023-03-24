@@ -1,8 +1,20 @@
 import React from "react";
 import Button from "../Button";
 import { mobileCoursesData } from "../../../data/courses";
+import CoursesCard from "./CoursesCard";
 const Courses = ({ clashDisplay }) => {
-	const tags = ["all categories", "design", "development", "marketing"];
+	const [courses, setCourses] = React.useState(mobileCoursesData);
+	const tags = ["all categories", "Design", "Development", "Marketing"];
+
+	const filterCourses = (tag) => {
+		if (tag === "all categories") {
+			setCourses(mobileCoursesData);
+			return;
+		}
+		const filteredCourses = mobileCoursesData.filter((course) => course.tag === tag);
+		setCourses(filteredCourses);
+	};
+
 	return (
 		<section className="py-[2.5rem]">
 			<div className="w-[90%] mx-auto text-center">
@@ -17,9 +29,36 @@ const Courses = ({ clashDisplay }) => {
 						no standard meaning for high definition, generally any standard video image
 					</p>
 				</div>
-				<div className="mt-4">
-					<div className="">
-						<Button label="All categories" classes="font-bold text-sm" />
+				<div className="mt-4 ">
+					<div className="flex justify-between py-5">
+						{tags.map((tag, i) => (
+							<Button
+								click={() => filterCourses(tag)}
+								myKey={i}
+								key={tag}
+								label={tag}
+								classes="font-bold text-sm capitalize"
+							/>
+						))}
+					</div>
+					<div className="grid gap-4">
+						{courses.map(({ id, src, tutor, tutorImg, price, lessons, duration, clock, heading, star, tag, book }) => (
+							<CoursesCard
+								mainImg={src}
+								tag={tag}
+								starImg={star}
+								heading={heading}
+								clock={clock}
+								duration={duration}
+								lessons={lessons}
+								book={book}
+								price={price}
+								tutor={tutor}
+								tutorImg={tutorImg}
+								key={id}
+								clashDisplay={clashDisplay}
+							/>
+						))}
 					</div>
 				</div>
 			</div>

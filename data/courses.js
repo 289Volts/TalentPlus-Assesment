@@ -13,6 +13,7 @@ import adam from "../public/assets/images/Courses/adam.svg";
 
 import star from "../public/assets/images/Courses/star.svg";
 import clock from "../public/assets/images/Courses/clock.svg";
+import book from "../public/assets/images/Courses/book.svg";
 
 export const mobileCoursesData = [
 	{
@@ -29,11 +30,12 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Design",
 		tutorImg: leo,
+        book
 	},
 	{
 		id: 2,
 		src: mobileAudience,
-		heading: "introduction to new marketing audience",
+		heading: "Introduction to new marketing audience",
 		duration: "23hrs 50mins",
 		rating: "4.7k",
 		totalRating: "(32.7k+)",
@@ -44,11 +46,12 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Marketing",
 		tutorImg: jeff,
+        book
 	},
 	{
 		id: 3,
 		src: mobileWebDev,
-		heading: "introduction to html, css and bootstrap",
+		heading: "Introduction to HTML, CSS and bootstrap",
 		duration: "45hrs 50mins",
 		rating: "4.7k",
 		totalRating: "(32.7k+)",
@@ -59,11 +62,12 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Development",
 		tutorImg: claretta,
+        book
 	},
 	{
 		id: 4,
 		src: mobileJavascript,
-		heading: "introduction to javascript, git and github",
+		heading: "Introduction to Javascript, Git and Github",
 		duration: "30hrs 50mins",
 		rating: "4.7k",
 		totalRating: "(32.7k+)",
@@ -74,11 +78,12 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Development",
 		tutorImg: jess,
+        book
 	},
 	{
 		id: 5,
 		src: mobileMarketing,
-		heading: "introduction to outroom marketing analysis",
+		heading: "Introduction to outroom marketing analysis",
 		duration: "33hrs 50mins",
 		rating: "4.7k",
 		totalRating: "(32.7k+)",
@@ -89,11 +94,12 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Marketing",
 		tutorImg: samuel,
+        book
 	},
 	{
 		id: 6,
 		src: mobileLiveMarketing,
-		heading: "introduction to live marketing analysis",
+		heading: "Introduction to live marketing analysis",
 		duration: "10hrs 50mins",
 		rating: "4.7k",
 		totalRating: "(32.7k+)",
@@ -104,5 +110,6 @@ export const mobileCoursesData = [
 		star: star,
 		tag: "Marketing",
 		tutorImg: adam,
+        book
 	},
 ];
