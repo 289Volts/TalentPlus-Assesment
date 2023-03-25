@@ -18,6 +18,7 @@ module.exports = {
 				inputBg: "#2A2A2B",
 				placeholder: "#424141",
 				FAQBorder: "#EAEAEA",
+				header: "rgba(255, 255, 255, 0.01)",
 			},
 			backgroundImage: {
 				heroBg: "url('/assets/images/heroBg.svg')",
@@ -26,6 +27,9 @@ module.exports = {
 				featuresDot: "url('/assets/images/Features/dot.svg')",
 				benefitsDot: "url('/assets/images/Benefits/dot.svg')",
 				benefitsTriangle: "url('/assets/images/Benefits/triangle.svg')",
+			},
+			backdropBlur: {
+				header: "20px",
 			},
 		},
 	},

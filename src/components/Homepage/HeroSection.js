@@ -10,10 +10,10 @@ import EnrollNow from "../EnrollNow";
 const HeroSection = ({ clashDisplay }) => {
 	return (
 		<section className="bg-primary bg-heroBg bg-cover bg-no-repeat text-white">
-			<div className="w-[90%] mx-auto pt-[6rem]">
-				<div className="flex flex-col items-center text-center">
+			<div className="w-[90%] mx-auto pt-[6rem] text-center md:flex md:text-left md:justify-between md:items-center">
+				<div className="flex flex-col items-center md:items-start">
 					<div className="">
-						<h1 className={`text-[2rem] font-bold leading-[1.4] ${clashDisplay}`}>
+						<h1 className={`text-[2rem] font-bold leading-[1.4] ${clashDisplay} md:mb-4`}>
 							Grow your skills to advance your career path{" "}
 						</h1>
 						<p className="mb-4">
@@ -22,7 +22,7 @@ const HeroSection = ({ clashDisplay }) => {
 						</p>
 					</div>
 					<div className="flex items-center gap-[0.84rem] mb-4">
-						<Link href="#" className="flex w-[fit-content] py-[0.4375rem] px-4 border border-white rounded-[2px]">
+						<Link href="#" className="flex w-[fit-content] py-[0.4475rem] px-4 border border-white rounded-[2px]">
 							<span className="">Get Started Now</span>
 							<Image src={mobileLinkArrow} alt="" />
 						</Link>
@@ -38,7 +38,7 @@ const HeroSection = ({ clashDisplay }) => {
 				</div>
 				<div className="relative">
 					<Image src={mobileHeroImg} alt="hero image" />
-					<Image className="absolute right-[0.5rem] top-[-7rem] w-[16%]" src={wavyArrow} alt="hero image" />
+					<Image className="absolute right-[0.5rem] top-[-7rem] w-[16%] md:top-[10rem] md:left-[-2rem]" src={wavyArrow} alt="hero image" />
 				</div>
 			</div>
 		</section>

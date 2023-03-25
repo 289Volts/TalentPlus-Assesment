@@ -43,7 +43,7 @@ body {
 
 .faq {
 	background: url("/assets/images/FAQs/wave.svg") no-repeat 0% 12rem,
-		url("/assets/images/FAQs/dot.svg") no-repeat 100% 2rem;
+		url("/assets/images/FAQs/dot.svg") no-repeat 98% 1.5rem;
 }
 .courses {
 	background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%;

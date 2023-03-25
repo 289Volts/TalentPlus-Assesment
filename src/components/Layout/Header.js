@@ -44,7 +44,7 @@ const Header = ({ satoshi }) => {
 	];
 
 	return (
-		<header className={`${satoshi} text-white z-[2] fixed top-0 left-0 right-0`}>
+		<header className={`${satoshi} text-white z-[2] absolute top-0 left-0 right-0 bg-transparent`}>
 			<div className={`mobile-header w-[90%] mx-auto py-3 flex items-center justify-between`}>
 				<Link href="/" className="">
 					<Image src={mobileLogo} alt="logo" />
@@ -69,6 +69,8 @@ const Header = ({ satoshi }) => {
 					</div>
 				</ul>
 			</nav>
+
+			<div className=""></div>
 		</header>
 	);
 };
