@@ -14,7 +14,7 @@ import desktopZoom from "../../../public/assets/images/Clients/desktopZoom.svg";
 const Clients = () => {
 	return (
 		<section className="bg-clients">
-			<div className="w-[80%] mx-auto py-[1.5rem] flex justify-between items-center gap-[2rem] lg:hidden">
+			<div className="w-[90%] mx-auto py-[1.5rem] flex justify-between items-center lg:hidden">
 				<Image src={zoom} alt="zoom" className="md:w-[100px]" />
 				<Image src={stripe} alt="stripe" className="md:w-[90px]" />
 				<Image src={monday} alt="monday" className="md:w-[160px]" />

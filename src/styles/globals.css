@@ -42,7 +42,7 @@ body {
 .features {
 	background: url("/assets/images/Features/wave.svg") no-repeat 100% 17.3rem,
 		url("/assets/images/Features/eclipse.svg") no-repeat 100% 28.5rem,
-		url("/assets/images/Features/dot.svg") no-repeat 100% 97%;
+		url("/assets/images/Features/dot.svg") no-repeat 70% 97%;
 }
 
 .faq {
