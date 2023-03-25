@@ -24,22 +24,22 @@ const Header = ({ satoshi }) => {
 		},
 		{
 			id: 2,
-			url: "#",
+			url: "/#about",
 			text: "About Us",
 		},
 		{
 			id: 3,
-			url: "#",
+			url: "/#courses",
 			text: "Courses",
 		},
 		{
 			id: 4,
-			url: "#",
+			url: "/#testimonials",
 			text: "Testimonials",
 		},
 		{
 			id: 5,
-			url: "#",
+			url: "/#community",
 			text: "Community",
 		},
 	];
@@ -84,7 +84,7 @@ const Header = ({ satoshi }) => {
 								className={`${asPath === url ? "text-white" : "text-inactive"} font-bold`}
 								href={url}
 							>
-								{text}{" "}
+								{text}
 							</Link>
 						</li>
 					))}

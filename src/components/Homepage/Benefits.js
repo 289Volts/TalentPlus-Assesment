@@ -37,7 +37,7 @@ const Benefits = ({ clashDisplay }) => {
 	];
 
 	return (
-		<section className="py-[2.5rem] md:pt-[5rem] benefits">
+		<section id="about" className="py-[2.5rem] md:pt-[5rem] benefits">
 			<div className="w-[90%] mx-auto lg:w-[87%] md:flex justify-between items-center">
 				<div className="text-center md:text-left md:w-[35%] xl:w-[40%]">
 					<h2

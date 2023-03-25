@@ -29,7 +29,7 @@ const Testimonials = ({ clashDisplay }) => {
 	];
 
 	return (
-		<section className="py-[2.5rem] md:py-[5rem]">
+		<section id="testimonials" className="py-[2.5rem] md:py-[5rem]">
 			<div className="text-center w-[90%] mx-auto lg:w-[87%] mb-[2rem]">
 				<h2
 					className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto md:text-[2rem] lg:text-[3.5rem]`}
