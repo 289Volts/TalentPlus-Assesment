@@ -36,13 +36,13 @@ const Features = ({ clashDisplay }) => {
 
 	return (
 		<section className="py-[2.5rem] features">
-			<div className="w-[90%] mx-auto md:flex md:justify-between gap-[2rem]">
-				<div className="md:text-left text-center ">
+			<div className="w-[90%] mx-auto md:flex md:justify-between gap-[2rem] lg:w-[87%] lg:items-center">
+				<div className="md:text-left text-center lg:w-[80%] xl:w-[60%]">
 					<h2
-						className={`${clashDisplay} font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto`}
+						className={`${clashDisplay} font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto lg:mx-0 lg:text-[2rem] xl:text-[3.5rem] lg:leading-[1.2]`}
 					>
 						High quality video, audio & live classes
-						<Image src={crown} alt="" className="absolute left-[-3%] top-[-0.8rem] md:left-[-5.5%]" />
+						<Image src={crown} alt="" className="absolute left-[-3%] top-[-1rem] md:left-[-5.5%] lg:left-[-4.5%]" />
 					</h2>
 					<p className="text-copy mb-4">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
@@ -54,20 +54,20 @@ const Features = ({ clashDisplay }) => {
 						classes="py-3 px-6 bg-primary text-white rounded-[3px] mx-auto text-sm md:mx-0"
 					/>
 
-					<div className="flex flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem] features-strip">
+					<div className="flex flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem] features-strip lg:w-[80%] lg:mb-0 lg:mx-0">
 						{features.map(({ src, label, id }) => (
 							<FeaturesStrip
 								src={src}
 								label={label}
 								key={label}
-								classes={`${id === 1 ? "w-[48%]" : id === 3 ? "w-[56%]" : "flex-1"}`}
+								classes={`${id === 1 ? "w-[48%]" : id === 3 ? "w-[56%]" : id === 2 ? "lg:w-[45%]" : "flex-1"}`}
 							/>
 						))}
 					</div>
 				</div>
-				<div className="features-image">
+				<div className="features-image lg:w-[70%] lg:translate-x-[-5rem">
 					<Image src={MobileFeaturesImg} alt="" className="w-[100%] mx-auto md:hidden" />
-					<Image src={desktopFeaturesImg} alt="" className="w-[100%] mx-auto hidden h-full md:block" />
+					<Image src={desktopFeaturesImg} alt="" className="w-[100%] mx-auto hidden md:block" />
 				</div>
 			</div>
 		</section>
