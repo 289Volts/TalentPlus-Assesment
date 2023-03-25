@@ -34,6 +34,10 @@ body {
 .ReactCollapse--collapse {
 	transition: height 500ms;
 }
+/* 
+.hero {
+	background: url("/assets/images/Hero-section/heroBg.svg") no-repeat cover, #004db3;
+} */
 
 .features {
 	background: url("/assets/images/Features/wave.svg") no-repeat 100% 17.3rem,
@@ -47,4 +51,15 @@ body {
 }
 .courses {
 	background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%;
+}
+
+@media (min-width: 768px) {
+	.hero {
+		background: url("/assets/images/Hero-section/heroBg.svg") no-repeat cover,
+			url("/assets/images/Hero-section/heroWave.svg") no-repeat 0% 50%,
+			url("/assets/images/Hero-section/heroDot.svg") no-repeat 8% 20%,
+			url("/assets/images/Hero-section/heroSolidDot.svg") no-repeat 36% 21.5%;
+
+		background-color: #004db3;
+	}
 }

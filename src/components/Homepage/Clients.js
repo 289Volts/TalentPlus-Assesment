@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import monday from "../../../public/assets/images/monday.svg";
-import stripe from "../../../public/assets/images/stripe.svg";
-import slack from "../../../public/assets/images/slack.svg";
-import zoom from "../../../public/assets/images/zoom.svg";
-import dropbox from "../../../public/assets/images/dropbox.svg";
+import monday from "../../../public/assets/images/Clients/monday.svg";
+import stripe from "../../../public/assets/images/Clients/stripe.svg";
+import slack from "../../../public/assets/images/Clients/slack.svg";
+import zoom from "../../../public/assets/images/Clients/zoom.svg";
+import dropbox from "../../../public/assets/images/Clients/dropbox.svg";
 
 const Clients = () => {
 	return (

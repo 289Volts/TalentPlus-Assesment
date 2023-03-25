@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import mobileLogo from "../../../public/assets/images/mobileLogo.svg";
+import mobileLogo from "../../../public/assets/images/Header/mobileLogo.svg";
 import Hamburger from "./Hamburger";
 import { useRouter } from "next/router";
 import EnrollNow from "../EnrollNow";

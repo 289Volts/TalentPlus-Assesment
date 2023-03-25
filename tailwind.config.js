@@ -21,7 +21,7 @@ module.exports = {
 				header: "rgba(255, 255, 255, 0.01)",
 			},
 			backgroundImage: {
-				heroBg: "url('/assets/images/heroBg.svg')",
+				heroBg: "url('/assets/images/Hero-section/heroBg.svg')",
 				featuresWave: "url('/assets/images/Features/wave.svg')",
 				featuresEclipse: "url('/assets/images/Features/eclipse.svg')",
 				featuresDot: "url('/assets/images/Features/dot.svg')",
