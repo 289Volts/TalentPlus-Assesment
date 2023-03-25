@@ -51,8 +51,8 @@ const Testimonials = ({ clashDisplay }) => {
 						autoplay={{ delay: 2500, disableOnInteraction: false }}
 					>
 						{testimonial.map(({ tutor, id, role, src }) => (
-							<SwiperSlide>
-								<TestimonialCard key={id} tutor={tutor} role={role} src={src} />
+							<SwiperSlide key={id}>
+								<TestimonialCard tutor={tutor} role={role} src={src} />
 							</SwiperSlide>
 						))}
 					</Swiper>

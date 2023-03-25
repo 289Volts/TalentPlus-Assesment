@@ -10,13 +10,16 @@ const Courses = ({ clashDisplay }) => {
 	const tags = ["all categories", "Design", "Development", "Marketing"];
 	const [isMobile, setIsMobile] = React.useState(false);
 
+	const [currentTag, setCurrentTag] = React.useState("all categories");
+
 	const filterCourses = (tag) => {
 		if (tag === "all categories") {
 			setCourses(mobileCoursesData);
-			return;
+		} else {
+			const filteredCourses = mobileCoursesData.filter((course) => course.tag === tag);
+			setCourses(filteredCourses);
 		}
-		const filteredCourses = mobileCoursesData.filter((course) => course.tag === tag);
-		setCourses(filteredCourses);
+		setCurrentTag(tag);
 	};
 
 	React.useEffect(() => {
@@ -24,7 +27,6 @@ const Courses = ({ clashDisplay }) => {
 			setIsMobile(true);
 		}
 	}, []);
-
 
 	return (
 		<section className="py-[2.5rem] courses relative md:py-[5rem]">
@@ -46,15 +48,18 @@ const Courses = ({ clashDisplay }) => {
 					</p>
 				</div>
 				<div className="mt-4 ">
-					<div className="flex justify-between py-5 md:w-[70%] md:mx-auto lg:w-[56%]">
+					<div className="flex justify-between items-center gap-1 py-5 md:w-[78%] md:mx-auto lg:w-[60%] md:grid md:grid-cols-4">
 						{tags.map((tag, i) => (
-							<Button
-								click={() => filterCourses(tag)}
-								myKey={i}
-								key={tag}
-								label={tag}
-								classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${""} md:text-base`}
-							/>
+							<div key={tag} className="">
+								<Button
+									click={() => filterCourses(tag)}
+									myKey={i}
+									label={tag}
+									classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${""} w-[fit-content] ${
+										currentTag === tag ? "text-primary px-3 py-2 bg-white" : "text-copy"
+									} md:text-base`}
+								/>
+							</div>
 						))}
 					</div>
 					<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

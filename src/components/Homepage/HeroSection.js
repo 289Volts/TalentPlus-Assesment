@@ -13,7 +13,7 @@ import EnrollNow from "../EnrollNow";
 const HeroSection = ({ clashDisplay }) => {
 	return (
 		<section className="hero bg-heroBg bg-cover bg-primary text-white">
-			<div className=" w-[90%] mx-auto pt-[6rem] text-center md:flex md:text-left md:justify-between md:items-end lg:items-center lg:w-[87%]">
+			<div className=" w-[90%] mx-auto pt-[6rem] text-center md:flex md:text-left md:justify-between md:items-end md:pt-[10rem] lg:items-center lg:w-[87%]">
 				<div className="flex flex-col items-center md:items-start lg:w-[48%]">
 					<div className="">
 						<h1
