@@ -50,7 +50,7 @@ body {
 		url("/assets/images/FAQs/dot.svg") no-repeat 98% 1.5rem;
 }
 .courses {
-	background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%;
+	/* background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%; */
 }
 
 @media (min-width: 768px) {
