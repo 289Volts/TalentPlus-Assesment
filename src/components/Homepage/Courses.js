@@ -29,7 +29,7 @@ const Courses = ({ clashDisplay }) => {
 	}, []);
 
 	return (
-		<section className="py-[2.5rem] courses relative md:py-[5rem]">
+		<section className="py-[2.5rem] courses relative md:pt-[5rem]">
 			<Image
 				src={blueStar}
 				alt="blue star"
