@@ -16,7 +16,8 @@ module.exports = {
 				inactive: "#AAC4E6",
 				bodyBg: "#F8F9FC",
 				inputBg: "#2A2A2B",
-				placeholder: "#424141"
+				placeholder: "#424141",
+				FAQBorder: "#EAEAEA",
 			},
 			backgroundImage: {
 				heroBg: "url('/assets/images/heroBg.svg')",

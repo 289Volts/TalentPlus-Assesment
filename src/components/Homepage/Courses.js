@@ -3,6 +3,8 @@ import Button from "../Button";
 import { mobileCoursesData } from "../../../data/courses";
 import CoursesCard from "./CoursesCard";
 import AltLink from "../AltLink";
+import Image from "next/image";
+import blueStar from "../../../public/assets/images/Courses/star.svg"
 const Courses = ({ clashDisplay }) => {
 	const [courses, setCourses] = React.useState(mobileCoursesData);
 	const tags = ["all categories", "Design", "Development", "Marketing"];
@@ -17,11 +19,12 @@ const Courses = ({ clashDisplay }) => {
 	};
 
 	return (
-		<section className="py-[2.5rem]">
+		<section className="py-[2.5rem] courses relative">
+			<Image src={blueStar} alt="blue star" className="absolute top-[1.5rem] left-[1rem]" />
 			<div className="w-[90%] mx-auto text-center">
 				<div className="">
 					<h2
-						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto px-5`}
+						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto `}
 					>
 						browse our popular courses
 					</h2>

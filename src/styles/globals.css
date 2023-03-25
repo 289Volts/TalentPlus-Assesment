@@ -31,9 +31,20 @@ body {
 	@apply bg-bodyBg;
 }
 
+.ReactCollapse--collapse {
+	transition: height 500ms;
+}
 
 .features {
 	background: url("/assets/images/Features/wave.svg") no-repeat 100% 17.3rem,
 		url("/assets/images/Features/eclipse.svg") no-repeat 100% 28.5rem,
-		url("/assets/images/Features/dot.svg") no-repeat 72% 97%;
+		url("/assets/images/Features/dot.svg") no-repeat 100% 97%;
+}
+
+.faq {
+	background: url("/assets/images/FAQs/wave.svg") no-repeat 0% 12rem,
+		url("/assets/images/FAQs/dot.svg") no-repeat 100% 2rem;
+}
+.courses {
+	background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%;
 }
