@@ -2,9 +2,11 @@ import React from "react";
 import Button from "../Button";
 import { mobileCoursesData } from "../../../data/courses";
 import CoursesCard from "./CoursesCard";
+import AltLink from "../AltLink";
 const Courses = ({ clashDisplay }) => {
 	const [courses, setCourses] = React.useState(mobileCoursesData);
 	const tags = ["all categories", "Design", "Development", "Marketing"];
+	const [classList, setClassList] = React.useState("");
 
 	const filterCourses = (tag) => {
 		if (tag === "all categories") {
@@ -37,7 +39,7 @@ const Courses = ({ clashDisplay }) => {
 								myKey={i}
 								key={tag}
 								label={tag}
-								classes="font-bold text-sm capitalize"
+								classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${classList}`}
 							/>
 						))}
 					</div>
@@ -59,7 +61,11 @@ const Courses = ({ clashDisplay }) => {
 								clashDisplay={clashDisplay}
 							/>
 						))}
-					</div>
+                    </div>
+                    
+                    <div className="flex justify-center">
+                        <AltLink url="/" label="View Courses" classes="text-white bg-primary font-bold text-sm mt-6 py-2 px-4 rounded-[3px]" />
+                    </div>
 				</div>
 			</div>
 		</section>
