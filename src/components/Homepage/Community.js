@@ -10,7 +10,7 @@ const Community = ({ clashDisplay }) => {
 			<div className="w-[90%] mx-auto lg:w-[87%]">
 				<div className="text-center">
 					<p className="uppercase font-medium text-sm md:text-base">join our community</p>
-					<h2 className={`${clashDisplay} font-bold text-[1.5rem] mb-2 leading-[1.4] relative w-[fit-content] mx-auto md:text-[2rem] lg:text-[3.5rem]`}>
+					<h2 className={`${clashDisplay} font-bold text-[1.5rem] mb-2 leading-[1.4] relative lg:w-[93%] mx-auto md:text-[2rem] lg:text-[3.5rem]`}>
 						Are you ready to connect with the future talent of the tech world?
 					</h2>
 					<p className=" capitalize">meet up with other techstars and grow together</p>

@@ -14,7 +14,7 @@ const Accordion = ({ title, content, index }) => {
 	return (
 		<div className="pb-2 mt-5 border-b-FAQBorder border-b">
 			<div onClick={() => openAccordion(index)} className="flex items-center justify-between">
-				<h2 className={`font-[900] ${isOpen.includes(index) ? "text-primary" : "text-heading"}`}>{title}</h2>
+				<h2 className={`font-[900] ${isOpen.includes(index) ? "text-primary" : "text-heading"} md:text-[1.5rem]`}>{title}</h2>
 				<Image
 					src={isOpen.includes(index) ? open : close}
 					alt="open"
