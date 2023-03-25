@@ -37,11 +37,11 @@ const Benefits = ({ clashDisplay }) => {
 	];
 
 	return (
-		<section className="py-[2.5rem]">
+		<section className="py-[2.5rem] md:pt-[5rem] benefits">
 			<div className="w-[90%] mx-auto lg:w-[87%] md:flex justify-between items-center">
 				<div className="text-center md:text-left md:w-[35%] xl:w-[40%]">
 					<h2
-						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.3] relative md:text-[2rem] lg:text-[2.25rem] `}
+						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.3] relative md:text-[2rem] lg:text-[2rem] `}
 					>
 						this is why we are best from others
 					</h2>

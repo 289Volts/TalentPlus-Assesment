@@ -34,10 +34,6 @@ body {
 .ReactCollapse--collapse {
 	transition: height 500ms;
 }
-/* 
-.hero {
-	background: url("/assets/images/Hero-section/heroBg.svg") no-repeat cover, #004db3;
-} */
 
 .features {
 	background: url("/assets/images/Features/wave.svg") no-repeat 100% 17.3rem,
@@ -47,10 +43,12 @@ body {
 
 .faq {
 	background: url("/assets/images/FAQs/wave.svg") no-repeat 0% 12rem,
-		url("/assets/images/FAQs/dot.svg") no-repeat 98% 1.5rem;
+		url("/assets/images/FAQs/dot.svg") no-repeat 96% 1.5rem;
 }
-.courses {
-	/* background: url("/assets/images/Courses/star.svg") no-repeat 0% 0%; */
+
+.swiper-pagination {
+	position: static !important;
+	margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -61,5 +59,26 @@ body {
 			url("/assets/images/Hero-section/heroSolidDot.svg") no-repeat 36% 21.5%;
 
 		background-color: #004db3;
+	}
+
+	.faq {
+		background: url("/assets/images/FAQs/desktopWave.svg") no-repeat 0% 12rem,
+			url("/assets/images/FAQs/dot.svg") no-repeat 96% 9%, url("/assets/images/FAQs/leftBlob.svg") no-repeat 0% 80%,
+			url("/assets/images/FAQs/rightBlob.svg") no-repeat 100% 15%;
+		background-size: 3%, auto, 3%, 3%;
+	}
+
+	.benefits {
+		background: url("/assets/images/Benefits/wave.svg") no-repeat 70% 2rem,
+			url("/assets/images/Benefits/triangle.svg") no-repeat 2% 77%,
+			url("/assets/images/Benefits/dot.svg") no-repeat 98% 100%;
+		background-size: 4%, 2%, 2%;
+	}
+
+	.features {
+		background: url("/assets/images/Features/wave.svg") no-repeat 100% 2rem,
+			url("/assets/images/Features/eclipse.svg") no-repeat 100% 80%,
+			url("/assets/images/Features/dot.svg") no-repeat 85% 97%;
+		background-size: 4%, 3%, 1%;
 	}
 }

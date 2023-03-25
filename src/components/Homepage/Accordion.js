@@ -13,7 +13,7 @@ const Accordion = ({ title, content, index }) => {
 	};
 	return (
 		<div className="pb-2 mt-5 border-b-FAQBorder border-b">
-			<div onClick={() => openAccordion(index)} className="flex items-center justify-between">
+			<div onClick={() => openAccordion(index)} className="flex items-center justify-between cursor-pointer">
 				<h2 className={`font-[900] ${isOpen.includes(index) ? "text-primary" : "text-heading"} md:text-[1.5rem]`}>{title}</h2>
 				<Image
 					src={isOpen.includes(index) ? open : close}
@@ -22,7 +22,7 @@ const Accordion = ({ title, content, index }) => {
 				/>
 			</div>
 			<Collapse isOpened={isOpen.includes(index)}>
-				<p className="mt-3">{content}</p>
+				<p className="mt-3 font-medium">{content}</p>
 			</Collapse>
 		</div>
 	);

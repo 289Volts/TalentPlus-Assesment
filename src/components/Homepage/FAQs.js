@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 
 const FAQs = ({ clashDisplay }) => {
 	return (
-		<section className="bg-white py-[2.5rem] pb-[4rem] faq">
+		<section className="bg-white py-[2.5rem] pb-[4rem] faq md:py-[5rem]">
 			<div className="w-[90%] mx-auto md:w-[80%] lg:w-[70%]">
 				<div className="text-center mb-8 md:mb-[3rem]">
 					<h2

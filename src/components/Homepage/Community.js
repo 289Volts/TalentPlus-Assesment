@@ -6,7 +6,7 @@ import AltLink from "../AltLink";
 
 const Community = ({ clashDisplay }) => {
 	return (
-		<section className="bg-primary py-[2.5rem] text-white">
+		<section className="bg-primary py-[2.5rem] text-white md:py-[5rem]">
 			<div className="w-[90%] mx-auto lg:w-[87%]">
 				<div className="text-center">
 					<p className="uppercase font-medium text-sm md:text-base">join our community</p>

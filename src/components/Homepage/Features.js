@@ -35,7 +35,7 @@ const Features = ({ clashDisplay }) => {
 	];
 
 	return (
-		<section className="py-[2.5rem] features">
+		<section className="py-[2.5rem] features md:pt-[5rem]">
 			<div className="w-[90%] mx-auto md:flex md:justify-between gap-[2rem] lg:w-[87%] lg:items-center">
 				<div className="md:text-left text-center lg:w-[80%] xl:w-[60%]">
 					<h2
