@@ -41,7 +41,7 @@ const Features = ({ clashDisplay }) => {
 			<div className="w-[90%] mx-auto">
 				<div className=" text-center">
 					<h2
-						className={`${clashDisplay} font-bold text-[1.5rem] text-featuresHeading mb-2 leading-[1.7] relative w-[fit-content] mx-auto px-5`}
+						className={`${clashDisplay} font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto px-5`}
 					>
 						High quality video, audio & live classes
 						<Image src={crown} alt="" className="absolute left-[0] top-[-0.8rem]" />

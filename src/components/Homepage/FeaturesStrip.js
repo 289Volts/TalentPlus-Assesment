@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-const FeaturesStrip = ({src, label, classes}) => {
-  return (
-      <div className={`bg-white py-2 px-4 flex items-center gap-2 rounded-[4px] ${classes}`}>
-          <Image src={src} alt="" className='w-[24px] aspect-square' />
-          <p className="font-bold text-featuresHeading text-">{label}</p>
-    </div>
-  )
-}
+const FeaturesStrip = ({ src, label, classes }) => {
+	return (
+		<div className={`bg-white py-2 px-4 flex items-center gap-2 rounded-[4px] ${classes}`}>
+			<Image src={src} alt="" className="w-[24px] aspect-square" />
+			<p className="font-bold text-heading text-">{label}</p>
+		</div>
+	);
+};
 
-export default FeaturesStrip
+export default FeaturesStrip;

@@ -6,6 +6,8 @@ import Clients from "@/components/Homepage/Clients";
 import Features from "@/components/Homepage/Features";
 import Benefits from "@/components/Homepage/Benefits";
 import Courses from "@/components/Homepage/Courses";
+import Testimonials from "@/components/Homepage/Testimonials";
+import Community from "@/components/Homepage/Community";
 
 const clashDisplayFont = clashDisplay({
 	src: [
@@ -41,6 +43,8 @@ export default function Home() {
 			<Features clashDisplay={clashDisplayFont.className} />
       <Benefits clashDisplay={clashDisplayFont.className} />
       <Courses clashDisplay={clashDisplayFont.className} />
+      <Testimonials clashDisplay={clashDisplayFont.className} />
+      <Community clashDisplay={clashDisplayFont.className} />
 		</>
 	);
 }

@@ -6,7 +6,6 @@ import AltLink from "../AltLink";
 const Courses = ({ clashDisplay }) => {
 	const [courses, setCourses] = React.useState(mobileCoursesData);
 	const tags = ["all categories", "Design", "Development", "Marketing"];
-	const [classList, setClassList] = React.useState("");
 
 	const filterCourses = (tag) => {
 		if (tag === "all categories") {
@@ -22,11 +21,11 @@ const Courses = ({ clashDisplay }) => {
 			<div className="w-[90%] mx-auto text-center">
 				<div className="">
 					<h2
-						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-featuresHeading mb-2 leading-[1.7] relative w-[fit-content] mx-auto px-5`}
+						className={`${clashDisplay} capitalize font-bold text-[1.5rem] text-heading mb-2 leading-[1.7] relative w-[fit-content] mx-auto px-5`}
 					>
 						browse our popular courses
 					</h2>
-					<p className="text-featuresCopy">
+					<p className="text-copy">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 						no standard meaning for high definition, generally any standard video image
 					</p>
@@ -39,7 +38,7 @@ const Courses = ({ clashDisplay }) => {
 								myKey={i}
 								key={tag}
 								label={tag}
-								classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${classList}`}
+								classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${""}`}
 							/>
 						))}
 					</div>
@@ -61,11 +60,15 @@ const Courses = ({ clashDisplay }) => {
 								clashDisplay={clashDisplay}
 							/>
 						))}
-                    </div>
-                    
-                    <div className="flex justify-center">
-                        <AltLink url="/" label="View Courses" classes="text-white bg-primary font-bold text-sm mt-6 py-2 px-4 rounded-[3px]" />
-                    </div>
+					</div>
+
+					<div className="flex justify-center">
+						<AltLink
+							url="/"
+							label="View Courses"
+							classes="text-white bg-primary font-bold text-sm mt-6 py-2 px-4 rounded-[3px]"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
