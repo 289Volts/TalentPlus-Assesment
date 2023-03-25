@@ -11,7 +11,7 @@ const satoshiFont = satoshi({
 			style: "normal",
 		},
 		{
-			path: "./fonts/Satoshi/Satoshi-medium.otf",
+			path: "./fonts/Satoshi/Satoshi-Medium.otf",
 			weight: "500",
 			style: "normal",
 		},
