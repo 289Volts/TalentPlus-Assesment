@@ -21,7 +21,7 @@ const Clients = () => {
 				<Image src={slack} alt="slack" className="md:w-[120px]" />
 				<Image src={dropbox} alt="dropbox" className="md:w-[160px]" />
 			</div>
-			<div className="w-[80%] mx-auto py-[1.5rem] justify-between items-center hidden lg:flex gap-[2rem] xl:w-[75%]">
+			<div className="w-[80%] mx-auto py-[2.5rem] justify-between items-center hidden lg:flex gap-[2rem] xl:w-[75%]">
 				<Image src={desktopZoom} alt="zoom" className="w-[13%]" />
 				<Image src={desktopStripe} alt="stripe" className="w-[11%] xl:w-auto" />
 				<Image src={desktopMonday} alt="monday" className="w-[24%] xl:w-auto" />

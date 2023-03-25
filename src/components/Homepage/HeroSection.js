@@ -17,16 +17,16 @@ const HeroSection = ({ clashDisplay }) => {
 				<div className="flex flex-col items-center md:items-start lg:w-[48%]">
 					<div className="">
 						<h1
-							className={`text-[2rem] font-bold leading-[1.4] ${clashDisplay} md:mb-4 lg:text-[2.5rem] lg:leading-[1.2] xl:text-[4rem]`}
+							className={`text-[1.5rem] mobile:text-[2rem] font-bold leading-[1.4] ${clashDisplay} md:mb-4 lg:text-[2.5rem] lg:leading-[1.2] xl:text-[4rem]`}
 						>
 							Grow your skills to advance your career path{" "}
 						</h1>
-						<p className="mb-4 lg:mb-8 font-medium text-heroText">
+						<p className="mb-4 lg:mb-8 font-medium text-heroText text-sm mobile:text-base">
 							Build your future with our quality education. the best and largest all-in-one online tutoring platform in
 							the world
 						</p>
 					</div>
-					<div className="flex items-center gap-[0.84rem] mb-4 lg:mb-6">
+					<div className="flex items-center gap-[0.84rem] mb-4 lg:mb-6 text-sm mobile:text-base">
 						<Link
 							href="#"
 							className="flex w-[fit-content] py-[0.4475rem] px-4 border border-white rounded-[2px] md:py-[11px] md:px-6"
@@ -49,7 +49,7 @@ const HeroSection = ({ clashDisplay }) => {
 					<Image src={mobileHeroImg} alt="hero image" className="lg:hidden" />
 					<Image src={desktopHeroImg} alt="hero image" className="hidden lg:block" />
 					<Image
-						className="md:hidden absolute right-[0.5rem] top-[-7rem] w-[16%] md:top-[12rem] md:left-[-3rem]"
+						className="md:hidden absolute right-0 mobile:right-[0.5rem] top-[-7rem] w-[16%] md:top-[12rem] md:left-[-3rem]"
 						src={wavyArrow}
 						alt="hero image"
 					/>

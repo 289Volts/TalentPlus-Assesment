@@ -36,7 +36,7 @@ const Testimonials = ({ clashDisplay }) => {
 				>
 					what our clients are saying
 				</h2>
-				<p className="text-copy md:w-[60%] mx-auto">
+				<p className="text-copy md:w-[60%] mx-auto text-sm mobile:text-base">
 					High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 					no standard meaning for high definition, generally any standard video image
 				</p>

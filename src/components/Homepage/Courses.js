@@ -4,7 +4,7 @@ import { mobileCoursesData } from "../../../data/courses";
 import CoursesCard from "./CoursesCard";
 import AltLink from "../AltLink";
 import Image from "next/image";
-import blueStar from "../../../public/assets/images/Courses/star.svg";
+import blueStar from "../../../public/assets/images/Courses/blueStar.svg";
 const Courses = ({ clashDisplay }) => {
 	const [courses, setCourses] = React.useState(mobileCoursesData);
 	const tags = ["all categories", "Design", "Development", "Marketing"];
@@ -42,13 +42,13 @@ const Courses = ({ clashDisplay }) => {
 					>
 						browse our popular courses
 					</h2>
-					<p className="text-copy md:w-[70%] md:mx-auto">
+					<p className="text-copy md:w-[70%] md:mx-auto text-sm mobile:text-base">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 						no standard meaning for high definition, generally any standard video image
 					</p>
 				</div>
-				<div className="mt-4 ">
-					<div className="flex justify-between items-center gap-1 py-5 md:w-[78%] md:mx-auto lg:w-[60%] md:grid md:grid-cols-4">
+				<div className="mt-4">
+					<div className="flex justify-between items-center gap-1 py-5 md:w-[78%] md:mx-auto lg:w-[60%] md:grid md:grid-cols-4 overflow-x-scroll mobile:overflow-x-auto">
 						{tags.map((tag, i) => (
 							<div key={tag} className="">
 								<Button

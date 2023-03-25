@@ -11,9 +11,8 @@ import { usefulLinks, community } from "../../../data/footer";
 import Link from "next/link";
 
 const Footer = ({ clashDisplay, satoshi }) => {
-	const [input, setInput] = React.useState("");
 
-	const handleInput = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 	};
 
@@ -21,7 +20,8 @@ const Footer = ({ clashDisplay, satoshi }) => {
 		<footer className={`py-[2.5rem] bg-footerBg text-white ${satoshi} pb-[7rem] md:pt-[5rem]`}>
 			<div className="w-[90%] mx-auto lg:w-[87%] md:grid grid-cols-2 lg:flex flex-wrap justify-between gap-[2rem]">
 				<div className="space-y-6 mb-[4rem] lg:w-[30%]">
-					<Image src={mobileFooterLogo} alt="" />
+					<Image src={mobileFooterLogo} alt="" className="md:hidden" />
+					<Image src={desktopFooterLogo} alt="" className="hidden md:block" />
 					<p className="">Reach out to us on any of our social media networks</p>
 					<div className="flex gap-6">
 						<Image src={facebook} alt="" />
@@ -36,7 +36,7 @@ const Footer = ({ clashDisplay, satoshi }) => {
 					<h3 className={`capitalize ${clashDisplay} font-semibold text-2xl mb-6 md:text-[2rem]`}>useful links</h3>
 					<ul className="space-y-4">
 						{usefulLinks.map(({ id, url, text }) => (
-							<li key={id} className="">
+							<li key={id} className=" text-sm mobile:text-base">
 								<Link href={url}>{text}</Link>
 							</li>
 						))}
@@ -46,7 +46,7 @@ const Footer = ({ clashDisplay, satoshi }) => {
 					<h3 className={`capitalize ${clashDisplay} font-semibold text-2xl mb-6 md:text-[2rem]`}>Community</h3>
 					<ul className="space-y-4">
 						{community.map(({ id, url, text }) => (
-							<li key={id} className="">
+							<li key={id} className=" text-sm mobile:text-base">
 								<Link href={url}>{text}</Link>
 							</li>
 						))}
@@ -57,10 +57,10 @@ const Footer = ({ clashDisplay, satoshi }) => {
 					<div className="flex items-center">
 						<input
 							type="text"
-							className="border-primary border bg-inputBg py-[7px] flex-1 px-2 placeholder:text-sm placeholder:text-placeholder"
+							className="w-full border-primary border bg-inputBg py-[7px] flex-1 px-2 placeholder:text-sm border-r-0 placeholder:text-white/70"
 							placeholder="nft123@gmail.com"
 						/>
-						<button className="capitalize text-white py-[10px] px-4 bg-primary text-sm font-medium rounded-[3px] rounded-tl-none rounded-bl-none">
+						<button onClick={handleSubmit} className="capitalize text-white py-[9.8px] px-4 bg-primary text-sm font-medium rounded-[3px] rounded-tl-none rounded-bl-none w-[43%] mobile:w-auto">
 							send message
 						</button>
 					</div>

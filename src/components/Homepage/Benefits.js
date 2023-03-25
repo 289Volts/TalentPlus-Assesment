@@ -45,7 +45,7 @@ const Benefits = ({ clashDisplay }) => {
 					>
 						this is why we are best from others
 					</h2>
-					<p className="text-copy">
+					<p className="text-copy text-sm mobile:text-base">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 						no standard meaning for high definition, generally any standard video image
 					</p>

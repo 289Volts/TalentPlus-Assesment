@@ -44,7 +44,7 @@ const Features = ({ clashDisplay }) => {
 						High quality video, audio & live classes
 						<Image src={crown} alt="" className="absolute left-[-3%] top-[-1rem] md:left-[-5.5%] lg:left-[-4.5%]" />
 					</h2>
-					<p className="text-copy mb-4">
+					<p className="text-copy mb-4 text-sm mobile:text-base">
 						High-definition video is video of higher resolution and quality than standard definition. while there&apos;s
 						no standard meaning for high definition, generally any standard video image
 					</p>
@@ -54,13 +54,13 @@ const Features = ({ clashDisplay }) => {
 						classes="py-3 px-6 bg-primary text-white rounded-[3px] mx-auto text-sm md:mx-0"
 					/>
 
-					<div className="flex flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem] features-strip lg:w-[80%] lg:mb-0 lg:mx-0">
+					<div className="flex flex-col mobile:flex-row flex-wrap items-center gap-[0.875rem] mx-auto mt-6 mb-[2.5rem] features-strip lg:w-[80%] lg:mb-0 lg:mx-0">
 						{features.map(({ src, label, id }) => (
 							<FeaturesStrip
 								src={src}
 								label={label}
 								key={label}
-								classes={`${id === 1 ? "w-[48%]" : id === 3 ? "w-[56%]" : id === 2 ? "lg:w-[45%]" : "flex-1"}`}
+								classes={`${id === 1 ? "mobile:w-[48%]" : id === 3 ? "mobile:w-[56%]" : id === 2 ? "lg:w-[45%]" : "flex-1"} w-full mobile:w-auto`}
 							/>
 						))}
 					</div>
