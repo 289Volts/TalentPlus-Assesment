@@ -5,6 +5,7 @@ import mobileLinkArrow from "../../../public/assets/icons/mobileLinkArr.svg";
 import faces from "../../../public/assets/images/faces.svg";
 import mobileHeroImg from "../../../public/assets/images/mobileHeroImg.png";
 import wavyArrow from "../../../public/assets/images/wavyArrow.png";
+import desktopWavyArrow from "../../../public/assets/images/Hero-section/desktopWavyArr.svg";
 import EnrollNow from "../EnrollNow";
 
 const HeroSection = ({ clashDisplay }) => {
@@ -38,7 +39,8 @@ const HeroSection = ({ clashDisplay }) => {
 				</div>
 				<div className="relative">
 					<Image src={mobileHeroImg} alt="hero image" />
-					<Image className="absolute right-[0.5rem] top-[-7rem] w-[16%] md:top-[10rem] md:left-[-2rem]" src={wavyArrow} alt="hero image" />
+					<Image className="md:hidden absolute right-[0.5rem] top-[-7rem] w-[16%] md:top-[12rem] md:left-[-3rem]" src={wavyArrow} alt="hero image" />
+					<Image className="hidden md:block absolute right-[0.5rem] top-[-7rem] w-[16%] md:top-[13rem] md:left-[-2rem]" src={desktopWavyArrow} alt="hero image" />
 				</div>
 			</div>
 		</section>
