@@ -60,7 +60,9 @@ const Features = ({ clashDisplay }) => {
 								src={src}
 								label={label}
 								key={label}
-								classes={`${id === 1 ? "mobile:w-[48%]" : id === 3 ? "mobile:w-[56%]" : id === 2 ? "lg:w-[45%]" : "flex-1"} w-full mobile:w-auto`}
+								classes={`${
+									id === 1 ? "mobile:w-[48%]" : id === 3 ? "mobile:w-[56%]" : id === 2 ? "lg:w-[45%]" : "flex-1"
+								} w-full`}
 							/>
 						))}
 					</div>

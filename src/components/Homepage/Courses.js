@@ -56,7 +56,7 @@ const Courses = ({ clashDisplay }) => {
 									myKey={i}
 									label={tag}
 									classes={`font-bold text-xs capitalize px-2 py-2 rounded-[3px] ${""} w-[fit-content] ${
-										currentTag === tag ? "text-primary px-3 py-2 bg-white" : "text-copy"
+										currentTag === tag ? "text-primary px-3 py-2 bg-white md:px-4 md:py-3" : "text-copy"
 									} md:text-base`}
 								/>
 							</div>
