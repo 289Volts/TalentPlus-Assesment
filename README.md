@@ -2,7 +2,7 @@
 
 This project is an assessment set up to test the skills of a frontend developer. This assesment is in 3 parts,
 
-- Develop the design that was sent in the initial assessment invite mail.
+- Develop the [design](https://www.figma.com/file/efaADvQRuRa9E7GOp8MvP3/Techtime?node-id=1476-4&t=xHjYypGtz6KzMYaO-0) that was sent in the initial assessment invite mail.
 - Dockerize the app by creating a docker file and explain in a README file how to build and run the app in docker.
 - Record a video not more than 8 mins long showcasing the landing page and the docker setup.
 
