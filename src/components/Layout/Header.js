@@ -65,7 +65,7 @@ const Header = ({ satoshi }) => {
 								</li>
 							))}
 							<div className="flex justify-center">
-								<EnrollNow url="/" classes="py-4 px-8" />
+								<EnrollNow url="/" classes="py-3 px-7" />
 							</div>
 						</ul>
 					</nav>
