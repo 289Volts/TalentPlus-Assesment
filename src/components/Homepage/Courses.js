@@ -98,7 +98,7 @@ const Courses = ({ clashDisplay }) => {
 						)}
 					</div>
 
-					<div className="flex justify-center">
+					<div className="flex justify-center mt-6">
 						<AltLink
 							url="/"
 							label={isMobile ? "View Courses" : "Explore All Courses"}
