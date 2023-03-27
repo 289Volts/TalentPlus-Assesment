@@ -43,7 +43,7 @@ Congratulations! If you followed these steps, then you can go to your browser an
 After cloning on your local machine, create a docker-compose.yml file in the root folder where this project folder is.
 Example: If you are cloning this project into your Documents folder, the docker-compose.yaml file will be in the Documents folder and not in the project folder.
 
-- In the file, you need to create a service to explain what your app is made up of. These are the contents of the file
+In the file, you need to create a service to explain what your app is made up of. These are the contents of the file
 
 ```bash
   version: "3.9"
