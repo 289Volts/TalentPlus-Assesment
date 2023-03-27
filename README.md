@@ -50,7 +50,7 @@ Example: If you are cloning this project into your Documents folder, the docker-
 services:
   tech-time:
     build: ./talentplus-assesment
-    container_name: techTime_c  # this is a name for the container
+    container_name: techTime_c 
     ports:
       - "3000:3000"
     stdin_open: true
