@@ -76,4 +76,4 @@ After you create the docker-compose.yml file, run the command to build the conta
   docker-compose up
 ```
 
-- Once that's done, proceed to load up the app in your browser through [localhost:3000](https://localhost:3000).
+Once that's done, proceed to load up the app in your browser through [localhost:3000](https://localhost:3000).
