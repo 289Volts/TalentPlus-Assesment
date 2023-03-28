@@ -50,7 +50,7 @@ const Features = ({ clashDisplay }) => {
 					</p>
 					<AltLink
 						label="View Courses"
-						url="/"
+						url="/#courses"
 						classes="py-3 px-6 bg-primary text-white rounded-[3px] mx-auto text-sm md:mx-0"
 					/>
 
