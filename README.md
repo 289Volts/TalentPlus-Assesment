@@ -24,13 +24,13 @@ Go to the project directory
   cd name-of-project
 ```
 
-- Then install the dependencies by running
+Then install the dependencies by running
 
 ```bash
   npm install or yarn install
 ```
 
-- To spin up the development server, you need to run
+To spin up the development server, you need to run
 
 ```bash
   npm run dev or yarn dev
